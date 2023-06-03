@@ -1,4 +1,4 @@
-module go-riot
+module github.com/gerarparra0/go-riot
 
 go 1.20
 
