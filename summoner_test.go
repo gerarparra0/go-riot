@@ -6,13 +6,14 @@ import (
 )
 
 const (
-	devKey         = "RGAPI-041d3adf-887d-4cba-9d14-6081f215083c"
 	testSummonerID = "7WOTQ0plvmbJ2Kx9TwZdLKUmTJgnpm-FTNDXUsxtFCEtpwo"
 	testAccountID  = "O_C6_yfCaAgj9GgV9biST8LGEk9O0QlPdxCQlsg6oVhlUp8"
 	testPUUID      = "xVojEdk4AjaHfyHn5NLULbjinNRd9sLff3Jzd2is1VRF5AE6_z9RjirxUsUhvoQDhAnVgNvkSX6BMA"
 	testName       = "Insulin Abuser"
 	testRegion     = "NA"
 )
+
+var devKey = loadKey()
 
 func TestRiotAPI_GetSummonerByName(t *testing.T) {
 	type fields struct {
